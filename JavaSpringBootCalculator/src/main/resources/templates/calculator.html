@@ -1,0 +1,58 @@
+<!--
+/*
+ *  _____ _____ _____   _
+ * |_   _/  __ \_   _| | |
+ *   | | | /  \/ | | __| | ___ _ __ ___  _   _   ___ ___  _ __ ___
+ *   | | ||      | |/ _` |/ _ \ '_ ` _ \| | | | / __/ _ \| '_ ` _ \
+ *  _| |_| \__/\ | | (_| |  __/ | | | | | |_| || (_| (_) | | | | | |
+ * |______\____/ |_|\__,_|\___|_| |_| |_|\__, (_)___\___/|_| |_| |_|
+ *                                        __/ |
+ *                                _      |___/
+ *              ___ ___ ___ _____|_|_ _ _____
+ *             | . |  _| -_|     | | | |     |
+ *             |  _|_| |___|_|_|_|_|___|_|_|_|  LICENSE
+ *             |_|
+ *
+ * TOP PROGRAMMING COURSES  <> DESIGN COURSES <>  E-COMMERCE COURSES
+ *
+ * This source code is a part of online courses at WWW.ICTDEMY.COM
+ *
+ * The code is under the terms of premium content and was written thanks
+ * to community support. It is meant for personal usage only and it cannot
+ * be shared. Visit https://www.ictdemy.com/licenses for more information
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Awesome Calculator!</title>
+</head>
+<body>
+<h1 th:text="${titleDTO.title}"></h1>
+<form action="/calculator" method="post">
+    <label>
+        First number:
+        <input type="number" id="number1" name="number1" th:field="${calculatorDTO.number1}"/>
+    </label><br/>
+
+    <label>Operation:
+        <select id="operation" name="operation" th:field="${calculatorDTO.operation}">
+            <option value="+">Plus</option>
+            <option value="-">Minus</option>
+            <option value="*">Times</option>
+            <option value="/">Divide by</option>
+        </select>
+    </label><br/>
+
+    <label>
+        Second number:
+        <input type="number" id="number2" name="number2" th:field="${calculatorDTO.number2}"/>
+    </label><br/>
+
+    <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>
+</form>
+
+</body>
+</html>

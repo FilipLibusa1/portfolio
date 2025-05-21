@@ -1,0 +1,41 @@
+<!--
+/*
+ *  _____ _____ _____   _
+ * |_   _/  __ \_   _| | |
+ *   | | | /  \/ | | __| | ___ _ __ ___  _   _   ___ ___  _ __ ___
+ *   | | ||      | |/ _` |/ _ \ '_ ` _ \| | | | / __/ _ \| '_ ` _ \
+ *  _| |_| \__/\ | | (_| |  __/ | | | | | |_| || (_| (_) | | | | | |
+ * |______\____/ |_|\__,_|\___|_| |_| |_|\__, (_)___\___/|_| |_| |_|
+ *                                        __/ |
+ *                                _      |___/
+ *              ___ ___ ___ _____|_|_ _ _____
+ *             | . |  _| -_|     | | | |     |
+ *             |  _|_| |___|_|_|_|_|___|_|_|_|  LICENSE
+ *             |_|
+ *
+ * TOP PROGRAMMING COURSES  <> DESIGN COURSES <>  E-COMMERCE COURSES
+ *
+ * This source code is a part of online courses at WWW.ICTDEMY.COM
+ *
+ * The code is under the terms of premium content and was written thanks
+ * to community support. It is meant for personal usage only and it cannot
+ * be shared. Visit https://www.ictdemy.com/licenses for more information
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+        Number 1: <span th:text="${calculatorDTO.number1}"></span><br/>
+        Number 2: <span th:text="${calculatorDTO.number2}"></span><br/>
+
+    <p>
+        Result: <span th:text="${calculationResult}"></span>
+    </p>
+</body>
+</html>
